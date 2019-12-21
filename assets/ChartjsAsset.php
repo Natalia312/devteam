@@ -15,18 +15,18 @@ use yii\web\AssetBundle;
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @since 2.0
  */
-class AppAsset extends AssetBundle
+class ChartjsAsset extends AssetBundle
 {
-    public $basePath = '@webroot';
-    public $baseUrl = '@web';
+    public $sourcePath = '@app/companents/chartjs';
     public $css = [
-        'css/site.css',
+        'css/Chart.min.css',
     ];
     public $js = [
+        'js/Chart.min.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapAsset',
-        'app\assets\ChartjsAsset',
     ];
+    
 }
